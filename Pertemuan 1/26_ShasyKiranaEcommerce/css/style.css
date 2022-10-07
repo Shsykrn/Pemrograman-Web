@@ -75,4 +75,10 @@ body {
   .home .content-left {
     padding-bottom: 40px;
   }
+  .home .heading {
+    font-size: 46px;
+  }
+  .home .subheading {
+    font-size: 26px;
+  }
 }
