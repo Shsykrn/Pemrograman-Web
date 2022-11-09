@@ -2,23 +2,23 @@
 
 session_start();
 
-//database sementara
+
 $database = [
     'username' => 'Shasy',
     'password' => '123'
 ];
 
-if(isset($_POST['submit'])){
+if (isset($_POST['submit'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    if($username == $database['username'] && $password == $database['password']){
+    if ($username == $database['username'] && $password == $database['password']) {
         $_SESSION['username'] = $username;
         header("location:admin.php");
-    }else{
+    } else {
         echo '<script> alert("Username atau Password salah!");
         window.location="login-page.php";</script>';
     }
-}else{
-    echo'<script> window.location="login-page.php"; </script>';
+} else {
+    echo '<script> window.location="login-page.php"; </script>';
 }
