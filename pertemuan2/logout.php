@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['username'])) {
-    session_destory();
+    session_destroy();
     echo '<script>
     alert("Anda Berhasil logout");
     window.location="login-page.php";
